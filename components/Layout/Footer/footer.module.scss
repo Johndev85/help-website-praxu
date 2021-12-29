@@ -1,8 +1,15 @@
 @import "../../../styles/variables";
 
+.topBar {
+  width: 100%;
+  height: 5rem;
+  background-color: $color-secondary;
+}
+
 .footer {
-  display: grid;
-  grid-template: 1fr / repeat(2, 1fr);
+  width: 100%;
+  display: flex;
+  justify-content: center;
   padding: 2rem;
   background-image: linear-gradient(
     to right bottom,
@@ -12,35 +19,62 @@
     #f5553d,
     #f43737
   );
-  &__text {
-    width: 100%;
-    padding: 1rem 20%;
-    color: $color-white;
-    align-self: center;
-  }
-  &__social {
-    width: 100%;
-    height: 100%;
-    padding: 1rem 20%;
-    align-self: center;
+  &__container {
+    width: 90%;
+    // display: grid;
+    // grid-template: 1fr / repeat(2, 1fr);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    & span {
-      margin: 1rem 0;
-      color: $color-white;
-      font-weight: bold;
-    }
-    &__icons {
-      & ul {
+    justify-content: space-evenly;
+    &__left {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      &__text {
+        width: fit-content;
+        padding: 1rem;
+        color: $color-white;
         display: flex;
-        & li {
-          list-style: none;
-          margin-right: 1rem;
-          & a {
-            & img {
-              width: 2.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        & h3 {
+          margin: 0;
+        }
+        & p {
+          margin: 2rem 0;
+        }
+      }
+    }
+    &__social {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__conter {
+        width: fit-content;
+        padding: 1rem;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        & span {
+          margin: 1rem 0;
+          color: $color-white;
+          font-weight: bold;
+        }
+        &__icons {
+          & ul {
+            display: flex;
+            padding: 0;
+            & li {
+              list-style: none;
+              margin-right: 1rem;
+              & a {
+                & img {
+                  width: 2.5rem;
+                }
+              }
             }
           }
         }

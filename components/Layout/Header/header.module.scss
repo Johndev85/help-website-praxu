@@ -1,27 +1,50 @@
+@import "../../../styles/variables";
+
 .header {
   width: 100%;
   padding: 2rem 4rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  &__menu {
-    & ul {
+  justify-content: center;
+  &__container {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__menu {
+      & ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & li {
+          margin: 0 0.5rem;
+          list-style: none;
+          & a {
+            font-size: 1.1rem;
+            color: $color-text-menu;
+            &:hover {
+              cursor: pointer;
+              text-decoration: underline;
+              color: $color-black;
+            }
+          }
+        }
+      }
+    }
+    &__icons {
       display: flex;
       justify-content: center;
       align-items: center;
-      & li {
-        margin: 0 0.5rem;
-        list-style: none;
+      & a {
+        transition: 0.3s;
+        & img {
+          width: 3rem;
+          margin: 0 0.5rem;
+        }
+        &:hover {
+          transform: scale(1.1);
+        }
       }
-    }
-  }
-  &__icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    & img {
-      width: 3rem;
-      margin: 0 0.5rem;
     }
   }
 }

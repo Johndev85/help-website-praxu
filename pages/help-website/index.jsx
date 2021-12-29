@@ -56,12 +56,51 @@ const HelpWebsite = () => {
           </div>
         </section>
         <section className={styles.container__articles}>
-          <h2>Promoted Articles</h2>
-
-          <CardArticles
-            title="How do I create a Praxu account?"
-            text="Learn how you can develop with Praxu ..."
-          />
+          <div className={styles.container__articles_titles}>
+            <h2>Promoted Articles</h2>
+          </div>
+          <div className={styles.container__articles__cards}>
+            <CardArticles
+              title="How do I create a Praxu account?"
+              text="Learn how you can develop with Praxu ..."
+            />
+            <CardArticles
+              title="How do I sell a ticket in Praxu?"
+              text="Learn how you can develop with Praxu ..."
+            />
+            <CardArticles
+              title="What can I do if I think my account is compromised?"
+              text="Learn how you can develop with Praxu ..."
+            />
+            <CardArticles
+              title="How does the fee structure work on Praxu?"
+              text="Learn how you can develop with Praxu ..."
+            />
+            <CardArticles
+              title="How do I find my funds on Solana?"
+              text="Learn how you can develop with Praxu ..."
+            />
+            <CardArticles
+              title="Which blockchains does Praxu support?"
+              text="Learn how you can develop with Praxu ..."
+            />
+            <CardArticles
+              title="Where can I find a new ticket release?"
+              text="Learn how you can develop with Praxu ..."
+            />
+            <CardArticles
+              title="How do I keep my wallet and funds safe?"
+              text="Learn how you can develop with Praxu ..."
+            />
+            <CardArticles
+              title="How can I report fradulent content on Praxu?"
+              text="Learn how you can develop with Praxu ..."
+            />
+            <CardArticles
+              title="How can I buy a ticket on Praxu?"
+              text="Learn how you can develop with Praxu ..."
+            />
+          </div>
         </section>
       </section>
     </Layout>

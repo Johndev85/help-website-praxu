@@ -9,23 +9,25 @@
   max-width: 20rem;
   min-width: 20rem;
   min-height: 15rem;
-  padding: 3rem;
+  padding: 3rem 2rem;
   color: $color-black;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   &:hover {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   &__titles {
     display: flex;
     justify-content: center;
     align-items: center;
     & h2 {
-      font-size: 1.2rem;
+      margin-left: 0.5rem;
+      font-size: 1.1rem;
+      text-align: left;
     }
     & img {
-      width: 25%;
-      height: 25%;
+      width: 1.5rem;
     }
   }
 }
