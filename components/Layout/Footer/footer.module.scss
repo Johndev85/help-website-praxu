@@ -1,0 +1,50 @@
+@import "../../../styles/variables";
+
+.footer {
+  display: grid;
+  grid-template: 1fr / repeat(2, 1fr);
+  padding: 2rem;
+  background-image: linear-gradient(
+    to right bottom,
+    #f69360,
+    #f68152,
+    #f66d46,
+    #f5553d,
+    #f43737
+  );
+  &__text {
+    width: 100%;
+    padding: 1rem 20%;
+    color: $color-white;
+    align-self: center;
+  }
+  &__social {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 20%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    & span {
+      margin: 1rem 0;
+      color: $color-white;
+      font-weight: bold;
+    }
+    &__icons {
+      & ul {
+        display: flex;
+        & li {
+          list-style: none;
+          margin-right: 1rem;
+          & a {
+            & img {
+              width: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

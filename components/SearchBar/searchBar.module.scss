@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+
+.container {
+  max-width: fit-content;
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  border: 2px solid $color-secondary;
+  background-color: $color-white;
+  &:hover {
+    box-shadow: 0 0 0.5rem 0.2rem $color-secondary;
+  }
+  & input {
+    width: 23rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    &:focus {
+      outline: none;
+    }
+    color: $color-text-menu;
+    &_searchIcon {
+      color: $color-text-menu;
+    }
+  }
+}

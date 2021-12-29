@@ -1,0 +1,26 @@
+.header {
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__menu {
+    & ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & li {
+        margin: 0 0.5rem;
+        list-style: none;
+      }
+    }
+  }
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img {
+      width: 3rem;
+      margin: 0 0.5rem;
+    }
+  }
+}
