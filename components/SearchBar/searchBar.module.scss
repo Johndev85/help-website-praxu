@@ -30,3 +30,13 @@
     }
   }
 }
+
+////-------------------RESPONSIVE-------------------//////////////
+
+@media screen and (max-width: 1024px) {
+  .container {
+    & input {
+      width: 18rem;
+    }
+  }
+}

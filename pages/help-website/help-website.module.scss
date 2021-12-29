@@ -50,7 +50,6 @@
     }
   }
   &__articles {
-    // @include container(15%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,6 +66,23 @@
       grid-gap: 2rem;
       justify-content: center;
       align-items: center;
+    }
+  }
+}
+
+////-------------------RESPONSIVE-------------------//////////////
+
+@media screen and (max-width: 1024px) {
+  .container {
+    &__mid {
+      &__cards {
+        grid-template: auto / repeat(2, 1fr);
+      }
+    }
+    &__articles {
+      &__cards {
+        grid-template: auto / repeat(2, 1fr);
+      }
     }
   }
 }
