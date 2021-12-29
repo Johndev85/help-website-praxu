@@ -15,7 +15,7 @@ const Header = () => {
           src="/assets/images/PRAXU_logo.png"
           alt="logo praxu"
         />
-        <div>
+        <div className={styles.header__container__search}>
           <SearchBar />
         </div>
         <nav className={styles.header__container__menu}>

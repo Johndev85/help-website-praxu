@@ -29,3 +29,12 @@
     }
   }
 }
+
+@media screen and (max-width: 414px) {
+  .hamburMenu {
+    & img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

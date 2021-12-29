@@ -86,3 +86,28 @@
     }
   }
 }
+
+@media screen and (max-width: 414px) {
+  .container {
+    &__hero {
+      & h1 {
+        font-size: 3rem;
+      }
+    }
+    &__mid {
+      &__cards {
+        grid-template: auto / 1fr;
+      }
+      &__cardsBottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &__articles {
+      &__cards {
+        grid-template: auto / 1fr;
+      }
+    }
+  }
+}

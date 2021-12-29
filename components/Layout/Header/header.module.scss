@@ -72,3 +72,26 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 414px) {
+  .header {
+    padding: 2rem 1rem;
+    &__container {
+      justify-content: space-evenly;
+      &_logo {
+        width: 8rem;
+        height: 1.3rem;
+      }
+      &__search {
+        display: none;
+      }
+      &__icons {
+        & a {
+          & img {
+            width: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
