@@ -4,6 +4,7 @@ import styles from "./header.module.scss"
 
 //components
 import SearchBar from "../../SearchBar/SearchBar"
+import HamburMenu from "../HamburMenu/HamburMenu"
 
 const Header = () => {
   return (
@@ -41,6 +42,7 @@ const Header = () => {
             <img src="/assets/icons/user-icon.png" alt="user icon" />
           </a>
         </div>
+        <HamburMenu />
       </div>
     </header>
   )

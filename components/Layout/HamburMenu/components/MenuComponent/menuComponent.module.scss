@@ -1,0 +1,59 @@
+@import "../../../../../styles/variables";
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 100%;
+  width: fit-content;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  background-color: $color-secondary;
+  border: 1px solid red;
+  &__icon {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    & img {
+      width: 4rem;
+      height: 4rem;
+      margin: 0 0.5rem;
+    }
+  }
+  & ul {
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & li {
+      margin: 0 0.5rem;
+      list-style: none;
+      & a {
+        font-size: 1.1rem;
+        color: $color-text-menu;
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+          color: $color-black;
+        }
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 768px) {
+//   .menu {
+//     & a {
+//       font-size: 1.5rem;
+//       text-align: center;
+//     }
+//   }
+// }
