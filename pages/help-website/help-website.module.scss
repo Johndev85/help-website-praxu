@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.container {
+  height: 100%;
+  max-height: fit-content;
+  padding: 3rem 0;
+  &__hero {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../public/assets/images/hero-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    & h1 {
+      margin: 2rem;
+      font-size: 5rem;
+      font-weight: bold;
+      color: $color-white;
+      & span {
+        padding: 0.5rem;
+        background-color: $color-primary;
+      }
+    }
+  }
+  &__mid {
+    @include container(15%);
+    &__cards {
+      padding: 3rem 0;
+      display: grid;
+      grid-template: auto / repeat(3, 1fr);
+      grid-gap: 2rem;
+    }
+    &__cardsBottom {
+      padding: 0 0 3rem 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+  &__articles {
+    @include container(15%);
+    & h2 {
+      text-align: center;
+    }
+    &__cards {
+      padding: 3rem 0;
+      display: grid;
+      grid-template: auto / repeat(3, 1fr);
+      grid-gap: 2rem;
+    }
+  }
+}

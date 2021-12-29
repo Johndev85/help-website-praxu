@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 20rem;
+  min-width: 20rem;
+  min-height: 15rem;
+  padding: 3rem;
+  background-color: $color-white;
+  background: url("../../public/assets/images/card-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+  overflow: hidden;
+  color: $color-black;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  &:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+  }
+}

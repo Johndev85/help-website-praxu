@@ -10,7 +10,7 @@
   border: 2px solid $color-secondary;
   background-color: $color-white;
   &:hover {
-    box-shadow: 0 0 0.5rem 0.2rem $color-secondary;
+    box-shadow: 0 0 0.5rem 0 $color-secondary;
   }
   & input {
     width: 23rem;
@@ -21,7 +21,10 @@
     &:focus {
       outline: none;
     }
-    color: $color-text-menu;
+    color: $color-black;
+    &::placeholder {
+      color: $color-text-menu;
+    }
     &_searchIcon {
       color: $color-text-menu;
     }
